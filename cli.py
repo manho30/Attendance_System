@@ -9,6 +9,7 @@
 """
 
 import utils.attendance
+import utils.report
 
 def cliMenu():
     """
@@ -35,7 +36,7 @@ def constructCLI():
         cliMenu()
         option = input('Please select an option: ')
         if option == '1':
-            print('Report')
+            utils.report.reportMenu()
         elif option == '2':
             utils.attendance.attendanceMenu()
         elif option == '3':
